@@ -32,5 +32,5 @@ const CAPSULE_FALL_SPEED = 2.5;    // px per frame (speed is constant; drop chan
 const CAPSULE_HEIGHT     = 14;     // render height; width derived from sprite aspect ratio
 
 // Asset base paths — relative to index.html
-const SPRITES_PATH = 'Sprites Small/';
-const SOUNDS_PATH  = 'Sound Effects/';
+const SPRITES_PATH = 'Sprites%20Small/';
+const SOUNDS_PATH  = 'Sound%20Effects/';
