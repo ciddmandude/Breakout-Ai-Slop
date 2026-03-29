@@ -41,7 +41,7 @@ class AssetLoader {
 
   loadAll() {
     const spritePromises = Object.entries(SPRITE_KEYS).map(([key, file]) => {
-      const path = SPRITES_PATH + encodeURIComponent(file);
+      const path = SPRITES_PATH + file.replace('%', '%25');
       return new Promise((resolve) => {
         const img = new Image();
         img.onload = () => { this.sprites[key] = img; resolve(); };
@@ -56,7 +56,7 @@ class AssetLoader {
     });
 
     const soundPromises = Object.entries(SOUND_KEYS).map(([key, file]) => {
-      const path = SOUNDS_PATH + encodeURIComponent(file);
+      const path = SOUNDS_PATH + file;
       return new Promise((resolve) => {
         const audio = new Audio();
         audio.addEventListener('error', () => {
