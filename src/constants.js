@@ -31,6 +31,6 @@ const BLOCK_OFFSET_Y = HUD_HEIGHT + 24;
 const CAPSULE_FALL_SPEED = 2.5;    // px per frame (speed is constant; drop chance is per level)
 const CAPSULE_HEIGHT     = 14;     // render height; width derived from sprite aspect ratio
 
-// Asset base paths — absolute from the server root (E:/Breakout/)
-const SPRITES_PATH = '/Sprites Small/';
-const SOUNDS_PATH  = '/Sound%20Effects/';
+// Asset base paths — relative to index.html
+const SPRITES_PATH = 'Sprites Small/';
+const SOUNDS_PATH  = 'Sound Effects/';
